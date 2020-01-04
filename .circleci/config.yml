@@ -1,0 +1,8 @@
+version: 2.1
+jobs:
+  build:
+    docker:
+      - image: circleci/docker-laravel_app:docker-laravel_app
+    steps:
+      - checkout
+      - run: echo "hello world"
